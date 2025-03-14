@@ -84,7 +84,7 @@ svg {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .project-1 {
@@ -117,4 +117,22 @@ svg {
 .placeholder-1 {
     max-height: 90%;
     max-width: 90%;
+}
+
+.quote-container {
+    height: 250px;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote {
+    text-align: center;
+    width: 800px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    font-family: light italic;
 }
