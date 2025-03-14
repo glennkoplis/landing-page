@@ -1,69 +1,46 @@
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
-* {
-    margin: 0;
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
-body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
+.links {
+    border: 1px solid #fff;
+    /* For debugging */
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
+.login {
+    margin-left: 20px;
 }
 
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
 }
 
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-/*
-    9. Create a root stacking context
-  */
-#root,
-#__next {
-    isolation: isolate;
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
 }
